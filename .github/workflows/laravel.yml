@@ -124,4 +124,3 @@ jobs:
       run: |
         composer require --dev larastan/larastan
         vendor/bin/phpstan analyse app -c ./vendor/larastan/larastan/extension.neon --level=4 --no-progress
-
