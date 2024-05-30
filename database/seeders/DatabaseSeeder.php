@@ -2,8 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Http\Controllers\taskController;
+use App\Models\Task;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Factories\taskFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,11 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+         Task::factory(4)->create(); //aqui se manda a hacer los datos dummy para que siempre se vean cuando se haga el comando
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+         //se mandan a hacer llamando al modelo :: factory + numero de registros dummy y el crear
+       
+     
     }
 }

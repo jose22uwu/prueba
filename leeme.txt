@@ -1,0 +1,8 @@
+realizar las instalaciones con el comando
+composer global require laravel/installer
+laravel new example-app
+con eso se ahorran mucha config y como es con interfaz es más sencillo.
+
+recordar que para conectar la base de datos se ocupa poner el nombre del gestor en .env bien escrito
+luego poner el usuario, contraseña si la hay, y el puerto bien.
+recuerde que puede probar la conexión haciendo php artisan migrate
