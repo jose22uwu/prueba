@@ -94,9 +94,11 @@ jobs:
     - name: PHP Version
       run: php --version
 
-    # Code quality
     - name: Dump autoload
       run: composer dump-autoload
+
+    - name: Set execute permissions for PHPUnit
+      run: chmod +x vendor/bin/phpunit
 
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
